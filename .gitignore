@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Build / dist
+build/
+dist/
+*.spec
+
+# DaHood Scripts runtime
+runtime/
+logs/
+*.dll
+*.pyd
+*.log
+config.local.toml
+offset_dumps/*.bin
+
+# IDE
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Installer artifacts
+installer/out/
+installer/*.msi
+installer/*.exe
