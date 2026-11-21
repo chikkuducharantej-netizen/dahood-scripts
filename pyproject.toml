@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dahood-scripts"
+version = "1.4.2"
+description = "Da Hood Roblox Script — plugin host, executor bridge, and overlay toolkit for Windows"
+requires-python = ">=3.10"
+authors = [{ name = "dahood-scripts contributors" }]
+dependencies = [
+    "pymem>=1.12.0",
+    "requests>=2.31.0",
+    "rich>=13.7.0",
+    "pydantic>=2.6.0",
+]
+
+[project.scripts]
+dahood = "dahood_host.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
